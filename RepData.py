@@ -7,8 +7,6 @@ userZipcode = input('What is your zipcode: ')
 userCity = input('What is your city: ')
 userState = input('What is your state: ')
 
-##10700 Butterfly Court, 20878, Gaithersburg, MD
-
 addressString = (userStreetAddress + ', ' + userZipcode + ', ' + userCity + ', ' + userState)
 
 #getting the API data (this is for a house rep)
@@ -47,6 +45,14 @@ senator2FacebookHandle = responseSenator_info['officials'][1]['channels'][0]['id
 
 senator2TwitterHandle  = responseSenator_info['officials'][1]['channels'][1]['id']
 
+#return voter info
+electionresponse = requests.get('https://content-civicinfo.googleapis.com/civicinfo/v2/voterinfo?returnAllAvailableData=true&address=' + addressString + '&officialOnly=true&key=AIzaSyAehuN2vJJFqQq6rXI_dgHfH6O5at32LW4').text
+election_response_info = json.loads(electionresponse)
+
+electionInformation = election_response_info['state'][0]['electionAdministrationBody']['electionInfoUrl']
+electionRegistration = election_response_info['state'][0]['electionAdministrationBody']["electionRegistrationUrl"]
+electionPollingPlace = election_response_info['state'][0]['electionAdministrationBody']["votingLocationFinderUrl"]
+
 print('Your house representative is: ' + repName)
 print(repName + "'s phone number is: ")
 print(repPhone)
@@ -65,3 +71,7 @@ print(senator2Name + "'s phone number is: ")
 print(senator2Number)
 print(senator2Name + "'s facebook handle is: " + senator2FacebookHandle)
 print(senator2Name + "'s twitter handle is: " + senator2TwitterHandle)
+
+print("You can find more " + userState + " election information here: " + electionInformation)
+print("You can register to vote here: " + electionRegistration)
+print("You can find your polling place here: " + electionPollingPlace)

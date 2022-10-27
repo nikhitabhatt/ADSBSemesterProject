@@ -17,21 +17,16 @@ response_info = json.loads(response)
 
 #returns rep name
 repName = response_info['officials'][0]['name']
-print('Your house representative is: ' + repName)
 
 #returns rep phone number
 repPhone = response_info['officials'][0]['phones']
-print(repName + "'s phone number is: ")
-print(repPhone)
+
 
 ##returns rep social media handles
 repFacebookHandle = response_info['officials'][0]['channels'][0]['id']
-print(repName + "'s facebook handle is: " + repFacebookHandle)
 
 repTwitterHandle  = response_info['officials'][0]['channels'][1]['id']
-print(repName + "'s twitter handle is: " + repTwitterHandle)
 
-print(" ")
 #getting the API data (this is for a senator)
 responseSenator = requests.get('https://content-civicinfo.googleapis.com/civicinfo/v2/representatives?address=' + addressString + '&includeOffices=true&levels=country&roles=legislatorUpperBody&key=AIzaSyAehuN2vJJFqQq6rXI_dgHfH6O5at32LW4').text
 responseSenator_info = json.loads(responseSenator)
@@ -52,6 +47,13 @@ senator2FacebookHandle = responseSenator_info['officials'][1]['channels'][0]['id
 
 senator2TwitterHandle  = responseSenator_info['officials'][1]['channels'][1]['id']
 
+print('Your house representative is: ' + repName)
+print(repName + "'s phone number is: ")
+print(repPhone)
+
+print(repName + "'s facebook handle is: " + repFacebookHandle)
+print(repName + "'s twitter handle is: " + repTwitterHandle)
+print(" ")
 
 print('Your senators are: ' + senator1Name + ' and ' + senator2Name)
 print(senator1Name + "'s phone number is: ")
@@ -63,4 +65,3 @@ print(senator2Name + "'s phone number is: ")
 print(senator2Number)
 print(senator2Name + "'s facebook handle is: " + senator2FacebookHandle)
 print(senator2Name + "'s twitter handle is: " + senator2TwitterHandle)
-

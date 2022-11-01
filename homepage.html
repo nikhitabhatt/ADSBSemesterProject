@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>BLUEBERRY</title> <!--doesn't change actual page, edits the name of the tab-->
+    <link rel ="stylesheet" href="style.css"> <!--Connects html and css file-->
+</head>
+<body>
+
+<div class="container"> <!--calling the css class (on line 9)-->
+    <b style="background-color:#FFFFFF">INPUT YOUR ADDRESS TO GET YOUR REPRESENTATIVE </b>
+    <br> </br>
+    <form action="https://open.spotify.com/track/5oqDgw5VGBln5dSIOPWyBq?si=60749df34b7948e3" class="searchBar"> <!--we'll end up using method = get"" to retrieve their address, this will be linked to the rep's info page, also turn the link line 11 into a variable so it can be changed based on the adress they submitted-->
+        <input type="text" placeholder="street address, zip code, city, state (abbreviated)" name="q">
+        <button type="submit"><img src="images/blueberryIcon.png" style="height:40px;width:40px"></button> 
+    </form>
+<b style="background-color:#FFFFFF;" >ex. 12345 Halloween Drive, 60606, Chicago, IL</b>
+</div>
+
+</body>
+</html>

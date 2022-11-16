@@ -19,6 +19,9 @@ repName = response_info['officials'][0]['name']
 #returns rep phone number
 repPhone = response_info['officials'][0]['phones']
 
+#returns rep party
+repParty = response_info['officials'][0]['party']
+
 
 ##returns rep social media handles
 repFacebookHandle = response_info['officials'][0]['channels'][0]['id']
@@ -45,33 +48,33 @@ senator2FacebookHandle = responseSenator_info['officials'][1]['channels'][0]['id
 
 senator2TwitterHandle  = responseSenator_info['officials'][1]['channels'][1]['id']
 
-#return voter info
-electionresponse = requests.get('https://content-civicinfo.googleapis.com/civicinfo/v2/voterinfo?returnAllAvailableData=true&address=' + addressString + '&officialOnly=true&key=AIzaSyAehuN2vJJFqQq6rXI_dgHfH6O5at32LW4').text
-election_response_info = json.loads(electionresponse)
+#returns senator parties
+senator1Party = responseSenator_info['officials'][0]['party']
 
-electionInformation = election_response_info['state'][0]['electionAdministrationBody']['electionInfoUrl']
-electionRegistration = election_response_info['state'][0]['electionAdministrationBody']["electionRegistrationUrl"]
-electionPollingPlace = election_response_info['state'][0]['electionAdministrationBody']["votingLocationFinderUrl"]
+senator2Party = responseSenator_info['officials'][1]['party']
+
 
 print('Your house representative is: ' + repName)
 print(repName + "'s phone number is: ")
 print(repPhone)
 
+
+
 print(repName + "'s facebook handle is: " + repFacebookHandle)
 print(repName + "'s twitter handle is: " + repTwitterHandle)
-print(" ")
+print(repName + "is a part of the " + repParty)
 
 print('Your senators are: ' + senator1Name + ' and ' + senator2Name)
 print(senator1Name + "'s phone number is: ")
 print(senator1Number)
 print(senator1Name + "'s facebook handle is: " + senator1FacebookHandle)
 print(senator1Name + "'s twitter handle is: " + senator1TwitterHandle)
+print(senator1Name + "is a part of the " + senator1Party)
 
 print(senator2Name + "'s phone number is: ")
 print(senator2Number)
 print(senator2Name + "'s facebook handle is: " + senator2FacebookHandle)
 print(senator2Name + "'s twitter handle is: " + senator2TwitterHandle)
+print(senator2Name + "is a part of the " + senator2Party)
 
-print("You can find more " + userState + " election information here: " + electionInformation)
-print("You can register to vote here: " + electionRegistration)
-print("You can find your polling place here: " + electionPollingPlace)
+

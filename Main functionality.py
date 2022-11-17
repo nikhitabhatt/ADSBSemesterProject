@@ -76,12 +76,13 @@ for person in finance_response_info['response']['legislator']:
     if (person['@attributes']['firstlast'] == senator1Name) :
         sen1cid = person['@attributes']['cid']
 
+#fix this code
 ##used to get the top 10 industries that contributed to a senate campaign
 sen1top10 = requests.get('https://www.opensecrets.org/api/?method=candIndustry&cid=' + sen1cid + '&cycle=2020&apikey=403edab963f60bff8dcf08004bfce7f6&output=json').text
 sen1top10industries = json.loads(sen1top10)
 
-##used to get the top 10 campaign donors to a senate campaign
-sem1top10d = requests.get('https://www.opensecrets.org/api/?method=candContrib&cid=' + sen1cid + '&cycle=2020&apikey=403edab963f60bff8dcf08004bfce7f6&output=json').text
+#used to get the top 10 campaign donors to a senate campaign
+sen1top10d = requests.get('https://www.opensecrets.org/api/?method=candContrib&cid=' + sen1cid + '&cycle=2020&apikey=403edab963f60bff8dcf08004bfce7f6&output=json').text
 sen1top10donors = json.loads(sen1top10d)
 
 ##returns the senate cid

@@ -9,83 +9,6 @@ userState = input('What is your state: ')
 
 addressString = (userStreetAddress + ', ' + userZipcode + ', ' + userCity + ', ' + userState)
 
-##returns all the rep info
-def repName():
-    return repName
-
-def repPhone():
-    return repPhone
-
-def repParty():
-    return repParty
-
-def repFacebook():
-    return repFacebookHandle
-
-def repTwitter():
-    return repTwitterHandle
-
-def repTop10ind():
-    return top10industries
-
-def repTop10don():
-    return top10donors
-
-def repArticles():
-    return repArticles
-
-##returns all the senator 1 info
-
-def sen1Name():
-    return senator1Name
-
-def sen1Phone():
-    return senator1Number
-
-def sen1Party():
-    return senator1Party
-
-def sen1Facebook():
-    return senator1FacebookHandle
-
-def sen1Twitter():
-    return senator1TwitterHandle
-
-def sen1top10industries():
-    return sen1top10industries
-
-def sen1top10donors():
-    return sen1top10donors
-
-def sen1articles():
-    return senator1Articles
-
-##returns all the senator 2 info
-
-def sen2Name():
-    return senator2Name
-
-def sen2Phone():
-    return senator2Number
-
-def sen2Party():
-    return senator2Party
-
-def sen2Facebook():
-    return senator2FacebookHandle
-
-def sen2Twitter():
-    return senator2TwitterHandle
-
-def sen2top10industries():
-    return sen2top10industries
-
-def sen2top10donors():
-    return sen2top10donors
-
-def sen2articles():
-    return senator2Articles
-
 #getting the API data (this is for a house rep)
 response = requests.get('https://content-civicinfo.googleapis.com/civicinfo/v2/representatives?address=' + addressString + '&includeOffices=true&levels=country&roles=legislatorLowerBody&key=AIzaSyAehuN2vJJFqQq6rXI_dgHfH6O5at32LW4').text
 response_info = json.loads(response)
@@ -95,19 +18,24 @@ repName = response_info['officials'][0]['name']
 repl = repName.split()
 repx = len(repl)
 repLastName = repl.pop()
-
+print('The representative name is: ' + repName)
 
 #returns rep phone number
 repPhone = response_info['officials'][0]['phones']
+print('The representative phone is: ')
+print(repPhone)
 
 #returns rep party
 repParty = response_info['officials'][0]['party']
+print('The representative party is: ' + repParty)
 
 
 ##returns rep social media handles
 repFacebookHandle = response_info['officials'][0]['channels'][0]['id']
+print('The representative facebook is: ' + repFacebookHandle)
 
 repTwitterHandle  = response_info['officials'][0]['channels'][1]['id']
+print('The representative twitter is: ' + repTwitterHandle)
 
 #getting the API data (this is for a senator)
 responseSenator = requests.get('https://content-civicinfo.googleapis.com/civicinfo/v2/representatives?address=' + addressString + '&includeOffices=true&levels=country&roles=legislatorUpperBody&key=AIzaSyAehuN2vJJFqQq6rXI_dgHfH6O5at32LW4').text
@@ -161,16 +89,20 @@ elif top10 == 'Invalid CID':
     top10industries = 'Not found'
 else:
     top10industries = json.loads(top10)
+print('The top 10 industries are: ')
+print(top10industries)
 
 ##used to get the top 10 campaign donors to a house rep campaign
 top10d = requests.get('https://www.opensecrets.org/api/?method=candContrib&cid=' + repCid + '&cycle=2020&apikey=403edab963f60bff8dcf08004bfce7f6&output=json').text
 if top10d == 'Resource not found':
     top10donors = 'Not found'
-elif top10d == 'Invalid CID10700':
+elif top10d == 'Invalid CID':
     top10donors = 'Not found'
 else:
     top10donors = json.loads(top10d)
 
+print('The top 10 donors are: ')
+print(top10donors)
 
 
 ##returns the senate cid
@@ -225,6 +157,9 @@ else:
 #returns the latest news articles for a person
 rarticles = requests.get('https://api.goperigon.com/v1/all?apiKey=08db32cd-ff74-4992-959b-3b2a0899d564&q="' + repName + '" &showReprints=false&from=2022-01-01&to=2022-01-31').text
 repArticles = json.loads(rarticles)
+
+print('The latest news on this rep is: ' )
+print(repArticles)
 
 sen1articles = requests.get('https://api.goperigon.com/v1/all?apiKey=08db32cd-ff74-4992-959b-3b2a0899d564&q="' + senator1Name + '" &showReprints=false&from=2022-01-01&to=2022-01-31').text
 senator1Articles = json.loads(sen1articles)

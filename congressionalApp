@@ -7,3 +7,21 @@
 ##Article api key: 08db32cd-ff74-4992-959b-3b2a0899d564
 
 
+
+#Getting user address
+userStreetAddress = input('What is your street address: ')
+userZipcode = input('What is your zipcode: ')
+userCity = input('What is your city: ')
+userState = input('What is your state: ')
+
+addressString = (userStreetAddress + ', ' + userZipcode + ', ' + userCity + ', ' + userState)
+
+#getting the API data (this is for a house rep)
+response = requests.get('https://content-civicinfo.googleapis.com/civicinfo/v2/representatives?address=' + addressString + '&includeOffices=true&levels=country&roles=legislatorLowerBody&key=AIzaSyAehuN2vJJFqQq6rXI_dgHfH6O5at32LW4').text
+response_info = json.loads(response)
+
+#returns rep name
+repName = response_info['officials'][0]['name']
+repl = repName.split()
+repx = len(repl)
+repLastName = repl.pop()

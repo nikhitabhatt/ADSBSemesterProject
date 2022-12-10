@@ -1,0 +1,1303 @@
+status: 200
+content-type: application/json; charset=utf-8
+content-length: 46535
+connection: keep-alive
+date: Sat, 10 Dec 2022 17:56:30 GMT
+x-amzn-requestid: 1ac99077-b265-452a-86cc-28a1ec673afa
+access-control-allow-origin: *
+access-control-allow-headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+x-amz-apigw-id: c8Q8UHiVoAMFhCg=
+access-control-allow-methods: GET,OPTIONS
+x-amzn-trace-id: Root=1-6394c84e-74b9d8426bf277af30bf0a2e;Sampled=0
+x-cache: Miss from cloudfront
+via: 1.1 83e647ac155b0cf3a9869914f5de36a4.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD55-P5
+x-amz-cf-id: YxnKfe_GlRDa2xRBEn1TDsrXIU2ws6RlgnBb0Zv9gWpM3yP-ai3-Xw==
+content-location: https://api.propublica.org/congress/v1/house/votes/2022/12.json
+
+{
+   "status":"OK",
+   "copyright":"Copyright (c) 2022 Pro Publica Inc. All Rights Reserved.",
+   "results": {
+      "chamber": "House",
+      "year": 2022,
+      "month": 12,
+      "num_results": 26,
+      "votes": [
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 517,
+           "source": "http://clerk.house.gov/evs/2022/roll517.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll517.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/517.json",
+           "bill": {
+           "bill_id": "s1617-117",
+           "number": "S.1617",
+           "sponsor_id": "R000584",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s1617.json",
+           "title": "A bill to modify the requirements for the Administrator of the Small Business Administration relating to declaring a disaster in a rural area, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Disaster Assistance for Rural Communities Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-08",
+           "time": "13:54:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 209,
+             "no": 0,
+             "present": 0,
+             "not_voting": 10,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 197,
+             "no": 8,
+             "present": 0,
+             "not_voting": 8,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 406,
+             "no": 8,
+             "present": 0,
+             "not_voting": 18}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 516,
+           "source": "http://clerk.house.gov/evs/2022/roll516.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll516.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/516.json",
+           "bill": {
+           "bill_id": "hres1512-117",
+           "number": "H.RES.1512",
+           "sponsor_id": null,
+           "api_uri": null,
+           "title": null,
+           "latest_action": null
+           },
+           "question": "On Motion to Suspend the Rules and Agree",
+           "question_text": "",
+           "description": "Providing for the concurrence by the House in the Senate amendment to H.R. 7776, with an amendment",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-08",
+           "time": "13:39:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 174,
+             "no": 45,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 176,
+             "no": 35,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 350,
+             "no": 80,
+             "present": 0,
+             "not_voting": 2}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 515,
+           "source": "http://clerk.house.gov/evs/2022/roll515.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll515.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/515.json",
+           "bill": {
+           "bill_id": "adjourn-117",
+           "number": "ADJOURN",
+           "sponsor_id": null,
+           "api_uri": null,
+           "title": null,
+           "latest_action": null
+           },
+           "question": "On Motion to Adjourn",
+           "question_text": "",
+           "description": "",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-08",
+           "time": "11:59:00",
+           "result": "Failed",
+           "democratic": {
+             "yes": 1,
+             "no": 181,
+             "present": 0,
+             "not_voting": 37,
+             "majority_position": "No"
+            },
+           "republican": {
+             "yes": 128,
+             "no": 46,
+             "present": 0,
+             "not_voting": 39,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 129,
+             "no": 227,
+             "present": 0,
+             "not_voting": 76}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 514,
+           "source": "http://clerk.house.gov/evs/2022/roll514.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll514.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/514.json",
+           "bill": {
+           "bill_id": "hr8404-117",
+           "number": "H.R.8404",
+           "sponsor_id": "N000002",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr8404.json",
+           "title": "To repeal the Defense of Marriage Act and ensure respect for State regulation of marriage, and for other purposes.",
+           "latest_action": "Presented to President."
+           },
+           "question": "Table Motion to Reconsider",
+           "question_text": "",
+           "description": "Respect for Marriage Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-08",
+           "time": "11:39:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 197,
+             "no": 0,
+             "present": 0,
+             "not_voting": 22,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 27,
+             "no": 164,
+             "present": 0,
+             "not_voting": 22,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 224,
+             "no": 164,
+             "present": 0,
+             "not_voting": 44}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 513,
+           "source": "http://clerk.house.gov/evs/2022/roll513.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll513.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/513.json",
+           "bill": {
+           "bill_id": "hr8404-117",
+           "number": "H.R.8404",
+           "sponsor_id": "N000002",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr8404.json",
+           "title": "To repeal the Defense of Marriage Act and ensure respect for State regulation of marriage, and for other purposes.",
+           "latest_action": "Presented to President."
+           },
+           "question": "On Motion to Concur in the Senate Amendment",
+           "question_text": "",
+           "description": "Respect for Marriage Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-08",
+           "time": "11:11:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 219,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 39,
+             "no": 169,
+             "present": 1,
+             "not_voting": 4,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 258,
+             "no": 169,
+             "present": 1,
+             "not_voting": 4}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 512,
+           "source": "http://clerk.house.gov/evs/2022/roll512.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll512.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/512.json",
+           "bill": {
+           "bill_id": "hres1510-117",
+           "number": "H.RES.1510",
+           "sponsor_id": "S001205",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hres1510.json",
+           "title": "Providing for consideration of the Senate amendment to the bill (H.R. 8404) to repeal the Defense of Marriage Act and ensure respect for State regulation of marriage, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Agreeing to the Resolution",
+           "question_text": "",
+           "description": "Providing for consideration of the Senate amendment to the bill (H.R. 8404) to repeal the Defense of Marriage Act and ensure respect for State regulation of marriage, and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-07",
+           "time": "20:01:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 204,
+             "present": 0,
+             "not_voting": 9,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 217,
+             "no": 204,
+             "present": 0,
+             "not_voting": 11}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 511,
+           "source": "http://clerk.house.gov/evs/2022/roll511.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll511.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/511.json",
+           "bill": {
+           "bill_id": "hr5796-117",
+           "number": "H.R.5796",
+           "sponsor_id": "J000294",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr5796.json",
+           "title": "To amend title 35, United States Code, to establish a competition to award certificates that can be redeemed to accelerate certain matters at the Patent and Trademark Office, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On the Motion to Suspend the Rules and Concur in the Senate Amendment",
+           "question_text": "",
+           "description": "Patents for Humanity Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "16:27:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 216,
+             "no": 0,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 180,
+             "no": 24,
+             "present": 0,
+             "not_voting": 9,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 396,
+             "no": 24,
+             "present": 0,
+             "not_voting": 12}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 510,
+           "source": "http://clerk.house.gov/evs/2022/roll510.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll510.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/510.json",
+           "bill": {
+           "bill_id": "s4834-117",
+           "number": "S.4834",
+           "sponsor_id": "C001056",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s4834.json",
+           "title": "A bill to reauthorize the National Internet Crimes Against Children Task Force Program.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "PROTECT Our Children Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "16:16:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 213,
+             "no": 0,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 208,
+             "no": 1,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 421,
+             "no": 1,
+             "present": 0,
+             "not_voting": 10}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 509,
+           "source": "http://clerk.house.gov/evs/2022/roll509.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll509.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/509.json",
+           "bill": {
+           "bill_id": "s2796-117",
+           "number": "S.2796",
+           "sponsor_id": "O000174",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s2796.json",
+           "title": "A bill to amend the Omnibus Crime Control and Safe Streets Act of 1968 to provide for the eligibility of rural community response pilot programs for funding under the Comprehensive Opioid Abuse Grant Program, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Rural Opioid Abuse Prevention Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "16:07:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 214,
+             "no": 0,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 194,
+             "no": 11,
+             "present": 0,
+             "not_voting": 8,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 408,
+             "no": 11,
+             "present": 0,
+             "not_voting": 13}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 508,
+           "source": "http://clerk.house.gov/evs/2022/roll508.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll508.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/508.json",
+           "bill": {
+           "bill_id": "s3499-117",
+           "number": "S.3499",
+           "sponsor_id": "P000595",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s3499.json",
+           "title": "A bill to amend the Post-Katrina Emergency Management Reform Act of 2006 to repeal certain obsolete requirements, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "To amend the Post-Katrina Emergency Management Reform Act of 2006 to repeal certain obsolete requirements, and for other purposes",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "15:59:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 215,
+             "no": 0,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 209,
+             "no": 1,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 424,
+             "no": 1,
+             "present": 0,
+             "not_voting": 7}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 507,
+           "source": "http://clerk.house.gov/evs/2022/roll507.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll507.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/507.json",
+           "bill": {
+           "bill_id": "s3875-117",
+           "number": "S.3875",
+           "sponsor_id": "P000595",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s3875.json",
+           "title": "A bill to require the President to develop and maintain products that show the risk of natural hazards across the United States, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Community Disaster Resilience Zones Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "15:50:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 215,
+             "no": 0,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 118,
+             "no": 92,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 333,
+             "no": 92,
+             "present": 0,
+             "not_voting": 7}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 506,
+           "source": "http://clerk.house.gov/evs/2022/roll506.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll506.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/506.json",
+           "bill": {
+           "bill_id": "hr3462-117",
+           "number": "H.R.3462",
+           "sponsor_id": "C001121",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr3462.json",
+           "title": "To require an annual report on the cybersecurity of the Small Business Administration, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On the Motion to Suspend the Rules and Concur in the Senate Amendment",
+           "question_text": "",
+           "description": "SBA Cyber Awareness Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "15:39:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 209,
+             "no": 0,
+             "present": 0,
+             "not_voting": 10,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 208,
+             "no": 0,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 417,
+             "no": 0,
+             "present": 0,
+             "not_voting": 15}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 505,
+           "source": "http://clerk.house.gov/evs/2022/roll505.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll505.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/505.json",
+           "bill": {
+           "bill_id": "s4052-117",
+           "number": "S.4052",
+           "sponsor_id": "P000449",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s4052.json",
+           "title": "A bill to reauthorize a program for early detection, diagnosis, and treatment regarding deaf and hard-of-hearing newborns, infants, and young children, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Early Hearing Detection and Intervention Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "15:30:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 191,
+             "no": 17,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 408,
+             "no": 17,
+             "present": 0,
+             "not_voting": 7}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 504,
+           "source": "http://clerk.house.gov/evs/2022/roll504.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll504.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/504.json",
+           "bill": {
+           "bill_id": "motion-117",
+           "number": "MOTION",
+           "sponsor_id": null,
+           "api_uri": null,
+           "title": null,
+           "latest_action": null
+           },
+           "question": "On Motion to Suspend the Rules and Pass Certain Bills",
+           "question_text": "",
+           "description": "",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "15:19:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 163,
+             "no": 46,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 380,
+             "no": 46,
+             "present": 0,
+             "not_voting": 6}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 503,
+           "source": "http://clerk.house.gov/evs/2022/roll503.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll503.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/503.json",
+           "bill": {
+           "bill_id": "hr7946-117",
+           "number": "H.R.7946",
+           "sponsor_id": "T000472",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr7946.json",
+           "title": "To provide benefits for noncitizen members of the Armed Forces, and for other purposes.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on the Judiciary."
+           },
+           "question": "On Passage",
+           "question_text": "",
+           "description": "Veteran Service Recognition Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "15:08:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 3,
+             "no": 208,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 220,
+             "no": 208,
+             "present": 0,
+             "not_voting": 4}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 502,
+           "source": "http://clerk.house.gov/evs/2022/roll502.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll502.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/502.json",
+           "bill": {
+           "bill_id": "hr7946-117",
+           "number": "H.R.7946",
+           "sponsor_id": "T000472",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr7946.json",
+           "title": "To provide benefits for noncitizen members of the Armed Forces, and for other purposes.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on the Judiciary."
+           },
+           "question": "On Agreeing to the Amendment",
+           "question_text": "",
+           "description": "Vicente Gonzalez of Texas Part C Amendment No. 1",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "14:52:00",
+           "result": "Agreed to",
+           "democratic": {
+             "yes": 213,
+             "no": 0,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 207,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 213,
+             "no": 207,
+             "present": 0,
+             "not_voting": 12}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 501,
+           "source": "http://clerk.house.gov/evs/2022/roll501.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll501.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/501.json",
+           "bill": {
+           "bill_id": "hres1508-117",
+           "number": "H.RES.1508",
+           "sponsor_id": "M000312",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hres1508.json",
+           "title": "Providing for consideration of the bill (H.R. 3648) to amend the Immigration and Nationality Act to eliminate the per-country numerical limitation for employment-based immigrants, to increase the per-country numerical limitation for family-sponsored immigrants, and for other purposes; providing for consideration of the bill (H.R. 7946) to provide benefits for noncitizen members of the Armed Forces, and for other purposes; and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Agreeing to the Resolution",
+           "question_text": "",
+           "description": "Providing for consideration of the bill (H.R. 3648) the Eagle Act; providing for consideration of the bill (H.R. 7946) the Veteran Service Recognition Act; and for other purposes; and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-06",
+           "time": "10:37:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 215,
+             "no": 0,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 201,
+             "present": 0,
+             "not_voting": 12,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 215,
+             "no": 201,
+             "present": 0,
+             "not_voting": 16}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 500,
+           "source": "http://clerk.house.gov/evs/2022/roll500.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll500.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/500.json",
+           "bill": {
+           "bill_id": "hr8876-117",
+           "number": "H.R.8876",
+           "sponsor_id": "D000096",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr8876.json",
+           "title": "To reauthorize the Maternal, Infant, and Early Childhood Home Visiting program, and for other purposes.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on Finance."
+           },
+           "question": "On Passage",
+           "question_text": "",
+           "description": "Jackie Walorski Maternal and Child Home Visiting Reauthorization Act of 2022",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-02",
+           "time": "10:43:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 216,
+             "no": 0,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 174,
+             "no": 26,
+             "present": 0,
+             "not_voting": 13,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 390,
+             "no": 26,
+             "present": 0,
+             "not_voting": 16}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 499,
+           "source": "http://clerk.house.gov/evs/2022/roll499.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll499.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/499.json",
+           "bill": {
+           "bill_id": "s3115-117",
+           "number": "S.3115",
+           "sponsor_id": "S001198",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s3115.json",
+           "title": "A bill to remove the 4-year sunset from the Pro bono Work to Empower and Represent Act of 2018.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "To remove the 4-year sunset from the Pro bono Work to Empower and Represent Act of 2018",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "16:48:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 213,
+             "no": 0,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 193,
+             "no": 14,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 406,
+             "no": 14,
+             "present": 0,
+             "not_voting": 12}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 498,
+           "source": "http://clerk.house.gov/evs/2022/roll498.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll498.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/498.json",
+           "bill": {
+           "bill_id": "s231-117",
+           "number": "S.231",
+           "sponsor_id": "P000595",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s231.json",
+           "title": "A bill to direct the Administrator of the Federal Emergency Management Agency to develop guidance for firefighters and other emergency response personnel on best practices to protect them from exposure to PFAS and to limit and prevent the release of PFAS into the environment, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Protecting Firefighters from Adverse Substances Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "16:34:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 214,
+             "no": 0,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 186,
+             "no": 22,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 400,
+             "no": 22,
+             "present": 0,
+             "not_voting": 10}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 497,
+           "source": "http://clerk.house.gov/evs/2022/roll497.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll497.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/497.json",
+           "bill": {
+           "bill_id": "hr2521-117",
+           "number": "H.R.2521",
+           "sponsor_id": "L000581",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr2521.json",
+           "title": "To require the Secretary of Veterans Affairs to establish a pilot program to furnish doula services to veterans.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on Veterans&#39; Affairs."
+           },
+           "question": "On Motion to Suspend the Rules and Pass, as Amended",
+           "question_text": "",
+           "description": "DOULA for VA Act of 2022",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "16:23:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 213,
+             "no": 0,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 163,
+             "no": 44,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 376,
+             "no": 44,
+             "present": 0,
+             "not_voting": 12}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 496,
+           "source": "http://clerk.house.gov/evs/2022/roll496.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll496.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/496.json",
+           "bill": {
+           "bill_id": "motion-117",
+           "number": "MOTION",
+           "sponsor_id": null,
+           "api_uri": null,
+           "title": null,
+           "latest_action": null
+           },
+           "question": "On Motion to Suspend the Rules and Pass Certain Bills",
+           "question_text": "",
+           "description": "",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "16:10:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 213,
+             "no": 1,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 137,
+             "no": 65,
+             "present": 2,
+             "not_voting": 9,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 350,
+             "no": 66,
+             "present": 2,
+             "not_voting": 14}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 495,
+           "source": "http://clerk.house.gov/evs/2022/roll495.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll495.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/495.json",
+           "bill": {
+           "bill_id": "motion-117",
+           "number": "MOTION",
+           "sponsor_id": null,
+           "api_uri": null,
+           "title": null,
+           "latest_action": null
+           },
+           "question": "On Motion to Suspend the Rules and Pass Certain Bills and Agree to Certain Resolutions",
+           "question_text": "",
+           "description": "",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "15:55:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 214,
+             "no": 0,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 187,
+             "no": 18,
+             "present": 0,
+             "not_voting": 8,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 401,
+             "no": 18,
+             "present": 0,
+             "not_voting": 13}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 494,
+           "source": "http://clerk.house.gov/evs/2022/roll494.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll494.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/494.json",
+           "bill": {
+           "bill_id": "hr4785-117",
+           "number": "H.R.4785",
+           "sponsor_id": "K000397",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr4785.json",
+           "title": "To support the human rights of Uyghurs and members of other minority groups residing in the Xinjiang Uyghur Autonomous Region and safeguard their distinct identity, and for other purposes.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on Foreign Relations."
+           },
+           "question": "On Motion to Suspend the Rules and Pass, as Amended",
+           "question_text": "",
+           "description": "Uyghur Policy Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "15:41:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 216,
+             "no": 0,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 191,
+             "no": 17,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 407,
+             "no": 17,
+             "present": 0,
+             "not_voting": 8}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 493,
+           "source": "http://clerk.house.gov/evs/2022/roll493.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll493.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/493.json",
+           "bill": {
+           "bill_id": "hr6878-117",
+           "number": "H.R.6878",
+           "sponsor_id": "B001270",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr6878.json",
+           "title": "To address the health needs of incarcerated women related to pregnancy and childbirth, and for other purposes.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on the Judiciary."
+           },
+           "question": "On Passage",
+           "question_text": "",
+           "description": "Pregnant Women in Custody Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "15:29:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 211,
+             "no": 0,
+             "present": 0,
+             "not_voting": 8,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 113,
+             "no": 90,
+             "present": 0,
+             "not_voting": 10,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 324,
+             "no": 90,
+             "present": 0,
+             "not_voting": 18}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 492,
+           "source": "http://clerk.house.gov/evs/2022/roll492.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll492.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/492.json",
+           "bill": {
+           "bill_id": "hr3372-117",
+           "number": "H.R.3372",
+           "sponsor_id": "B001270",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr3372.json",
+           "title": "To authorize implementation grants to community-based nonprofits to operate one-stop reentry centers.",
+           "latest_action": "Received in the Senate and Read twice and referred to the Committee on the Judiciary."
+           },
+           "question": "On Passage",
+           "question_text": "",
+           "description": "One Stop Shop Community Reentry Program Act of 2021",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-01",
+           "time": "15:15:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 218,
+             "no": 0,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 41,
+             "no": 167,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 259,
+             "no": 167,
+             "present": 0,
+             "not_voting": 6}
+          }
+         ]
+    }
+}

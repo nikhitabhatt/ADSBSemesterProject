@@ -1,0 +1,18 @@
+status: 200
+content-type: application/json; charset=utf-8
+content-length: 36
+connection: keep-alive
+date: Mon, 12 Dec 2022 01:38:43 GMT
+x-amzn-requestid: 444c602c-685c-467d-8e5d-15a14f4e5219
+access-control-allow-origin: *
+access-control-allow-headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+x-amz-apigw-id: dAnllG4HoAMF28Q=
+access-control-allow-methods: GET,OPTIONS
+x-amzn-trace-id: Root=1-63968623-2866758e68efb9e5718479b6;Sampled=0
+x-cache: Miss from cloudfront
+via: 1.1 a805f3562e8099c23b78cf69c21f7834.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD79-C1
+x-amz-cf-id: XSOXZ5TtGwOOduqvRprFZzd8hpYtb4rkXizTUvopEHEl9H33dOM2Jw==
+content-location: https://api.propublica.org/congress/v1/117/bills/H.R.2751/cosponsors.json
+
+{"status":"404","error":"Not Found"}

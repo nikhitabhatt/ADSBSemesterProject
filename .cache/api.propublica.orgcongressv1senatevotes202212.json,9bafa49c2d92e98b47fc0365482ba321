@@ -2,17 +2,17 @@ status: 200
 content-type: application/json; charset=utf-8
 content-length: 237
 connection: keep-alive
-date: Thu, 15 Dec 2022 17:02:08 GMT
-x-amzn-requestid: 844733ee-be5d-4875-b64a-7127013969d9
+date: Fri, 16 Dec 2022 23:42:50 GMT
+x-amzn-requestid: 9ecf413a-958c-4bbc-b8b0-f67e53736e49
 access-control-allow-origin: *
 access-control-allow-headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
-x-amz-apigw-id: dMnqkHWNIAMFfXQ=
+x-amz-apigw-id: dQ1TFEy4IAMF70g=
 access-control-allow-methods: GET,OPTIONS
-x-amzn-trace-id: Root=1-639b5310-0ba2ea833ab73d6c4ff6adde;Sampled=0
+x-amzn-trace-id: Root=1-639d0279-4fb1fad661d2ab97791c18af;Sampled=0
 x-cache: Miss from cloudfront
-via: 1.1 1c2fb26f064af9cfc8090f524b03de02.cloudfront.net (CloudFront)
-x-amz-cf-pop: ATL58-P2
-x-amz-cf-id: XeApe1jzayQJConvz-Z5YE0MrsFLw5Unmkyc5zljj7cwvuzqBgPe_A==
+via: 1.1 19ae496eb414e9373ed8ce49d0fdbba2.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD79-C1
+x-amz-cf-id: MXdFItlsuecCg8oxmU0RrZeBSlsX4v7Z72_YbTEkkoINP48c2qGj-w==
 content-location: https://api.propublica.org/congress/v1/senate/votes/2022/12.json
 
 {

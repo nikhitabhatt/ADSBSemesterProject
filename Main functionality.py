@@ -254,16 +254,16 @@ senator2Articles = json.loads(sen2articles)
 
 ##New stuff
 introdHouse = congress.bills.recent(chamber='house', congress=111, type='introduced')
-print(introdHouse)
+
 
 introdSenate = congress.bills.recent(chamber='senate', congress=111, type='introduced')
-print(introdSenate)
+
 
 houseVotes = congress.votes.by_month(chamber='house')
-print(houseVotes)
+
 
 senateVotes = congress.votes.by_month(chamber='senate')
-print(senateVotes)
+
 
 ##more new stuff
 output = json.load(open(r"C:\Users\nikhi\Downloads\BioguideReps.json"))
@@ -273,7 +273,19 @@ bioguideRep = ''
 for person in output:
     if (person['name']['last'] == repLastName) :
         bioguideRep = person['id']['bioguide']
-print(bioguideRep)
 
 repBills = congress.members.bills(bioguideRep, type='introduced')
-print(repBills)
+
+bioguideSen1 = ''
+for person in output:
+    if (person['name']['last'] == sen1LastName) :
+        bioguideSen1 = person['id']['bioguide']
+
+sen1Bills = congress.members.bills(bioguideSen1, type='introduced')
+
+bioguideSen2 = ''
+for person in output:
+    if (person['name']['last'] == sen1LastName) :
+        bioguideSen2 = person['id']['bioguide']
+
+sen2Bills = congress.members.bills(bioguideSen2, type='introduced')

@@ -1,0 +1,32 @@
+status: 200
+content-type: application/json; charset=utf-8
+content-length: 358
+connection: keep-alive
+date: Tue, 13 Dec 2022 02:26:07 GMT
+x-amzn-requestid: f6177d0f-ee51-486b-81e5-2f2bbc668e19
+access-control-allow-origin: *
+access-control-allow-headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+x-amz-apigw-id: dEBd6FiLIAMFb3Q=
+access-control-allow-methods: GET,OPTIONS
+x-amzn-trace-id: Root=1-6397e2bf-1d3622121bdd5470673bb7ee;Sampled=0
+x-cache: Miss from cloudfront
+via: 1.1 68bb623bd1a01bfb6607a40643084c92.cloudfront.net (CloudFront)
+x-amz-cf-pop: IAD79-C1
+x-amz-cf-id: vS_MIVCSiDeq7MeFTHg0RQWRBiB3MIL7ehI6k9oVMQAWy2nSokHJDQ==
+content-location: https://api.propublica.org/congress/v1/members/A000017/bills/introduced.json
+
+{
+   "status":"OK",
+   "copyright":"Copyright (c) 2022 Pro Publica Inc. All Rights Reserved.",
+   "results":[
+      {
+         "id": "A000017",
+         "member_uri": "https://api.propublica.org/congress/v1/members/A000017.json",
+         "name": "James George Abourezk",
+         "num_results": 0,
+         "offset": 0,
+         "bills": [
+]
+      }
+   ]
+}

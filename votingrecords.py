@@ -3,6 +3,7 @@ import json
 from congress import Congress
 congress = Congress("UBUkraUmSFaWkkJ64CgAxwbc4PY44dXVEyVxRsey")
 
+
 #gets recent house and senate bills
 def recentHouseBills():
     introdHouse = congress.bills.recent(chamber='house', congress=111, type='introduced')
@@ -33,3 +34,18 @@ senateVotes = congress.votes.by_month(chamber='senate')
 print(senateVotes)
 
 
+
+repLastName = 'Raskin'
+
+output = json.load(open(r"C:\Users\nikhi\Downloads\BioguideReps.json"))
+
+
+bioguideRep = ''
+for person in output:
+    if (person['name']['last'] == repLastName) :
+        bioguideRep = person['id']['bioguide']
+id = bioguideRep
+
+
+personBills = congress.members.bills(id, type='introduced')
+print(personBills)

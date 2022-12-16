@@ -2,17 +2,17 @@ status: 200
 content-type: application/json; charset=utf-8
 content-length: 76882
 connection: keep-alive
-date: Sat, 10 Dec 2022 17:49:09 GMT
-x-amzn-requestid: eb7675df-2d34-4828-ab73-6b0282744c12
+date: Thu, 15 Dec 2022 17:02:07 GMT
+x-amzn-requestid: 7ee02af6-cb6d-4cfa-b6e2-461407473990
 access-control-allow-origin: *
 access-control-allow-headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
-x-amz-apigw-id: c8P3UFo0oAMFtLQ=
+x-amz-apigw-id: dMnqXG2NoAMFsKw=
 access-control-allow-methods: GET,OPTIONS
-x-amzn-trace-id: Root=1-6394c695-1ff480db4a87790f67101a54;Sampled=0
+x-amzn-trace-id: Root=1-639b530e-2afde27255fc4b10419612d7;Sampled=0
 x-cache: Miss from cloudfront
-via: 1.1 68bb623bd1a01bfb6607a40643084c92.cloudfront.net (CloudFront)
-x-amz-cf-pop: IAD79-C1
-x-amz-cf-id: VFoNx2TLswOJcjFqCtH8DUklupgw9A5nMEDnAZwtZO1_R-1FEppJeA==
+via: 1.1 1c2fb26f064af9cfc8090f524b03de02.cloudfront.net (CloudFront)
+x-amz-cf-pop: ATL58-P2
+x-amz-cf-id: CuDJbGWlXlLBGVztVBrY6Wka00TAVH9qvO5G2rYEQKW0oSJonFOzsw==
 content-location: https://api.propublica.org/congress/v1/111/senate/bills/introduced.json
 
 {

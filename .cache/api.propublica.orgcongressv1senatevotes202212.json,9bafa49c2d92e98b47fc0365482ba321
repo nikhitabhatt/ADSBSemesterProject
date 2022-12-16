@@ -1,0 +1,29 @@
+status: 200
+content-type: application/json; charset=utf-8
+content-length: 237
+connection: keep-alive
+date: Thu, 15 Dec 2022 17:02:08 GMT
+x-amzn-requestid: 844733ee-be5d-4875-b64a-7127013969d9
+access-control-allow-origin: *
+access-control-allow-headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
+x-amz-apigw-id: dMnqkHWNIAMFfXQ=
+access-control-allow-methods: GET,OPTIONS
+x-amzn-trace-id: Root=1-639b5310-0ba2ea833ab73d6c4ff6adde;Sampled=0
+x-cache: Miss from cloudfront
+via: 1.1 1c2fb26f064af9cfc8090f524b03de02.cloudfront.net (CloudFront)
+x-amz-cf-pop: ATL58-P2
+x-amz-cf-id: XeApe1jzayQJConvz-Z5YE0MrsFLw5Unmkyc5zljj7cwvuzqBgPe_A==
+content-location: https://api.propublica.org/congress/v1/senate/votes/2022/12.json
+
+{
+   "status":"OK",
+   "copyright":"Copyright (c) 2022 Pro Publica Inc. All Rights Reserved.",
+   "results": {
+      "chamber": "Senate",
+      "year": 2022,
+      "month": 12,
+      "num_results": 0,
+      "votes": [
+         ]
+    }
+}

@@ -1,18 +1,18 @@
 status: 200
 content-type: application/json; charset=utf-8
-content-length: 46535
+content-length: 67626
 connection: keep-alive
-date: Sat, 10 Dec 2022 17:56:30 GMT
-x-amzn-requestid: 1ac99077-b265-452a-86cc-28a1ec673afa
+date: Thu, 15 Dec 2022 17:02:08 GMT
+x-amzn-requestid: 7e141ad6-5c8c-4951-99af-186c9824eb60
 access-control-allow-origin: *
 access-control-allow-headers: Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
-x-amz-apigw-id: c8Q8UHiVoAMFhCg=
+x-amz-apigw-id: dMnqiFmeoAMFR2g=
 access-control-allow-methods: GET,OPTIONS
-x-amzn-trace-id: Root=1-6394c84e-74b9d8426bf277af30bf0a2e;Sampled=0
+x-amzn-trace-id: Root=1-639b5310-3cc18f7226d5d7b203671ac7;Sampled=0
 x-cache: Miss from cloudfront
-via: 1.1 83e647ac155b0cf3a9869914f5de36a4.cloudfront.net (CloudFront)
-x-amz-cf-pop: IAD55-P5
-x-amz-cf-id: YxnKfe_GlRDa2xRBEn1TDsrXIU2ws6RlgnBb0Zv9gWpM3yP-ai3-Xw==
+via: 1.1 1c2fb26f064af9cfc8090f524b03de02.cloudfront.net (CloudFront)
+x-amz-cf-pop: ATL58-P2
+x-amz-cf-id: 4A-oVgRIxJZKLxwUTgQ_5jQn5aa1QFgfMjEWetGuodz6AyxqWs6D5Q==
 content-location: https://api.propublica.org/congress/v1/house/votes/2022/12.json
 
 {
@@ -22,8 +22,498 @@ content-location: https://api.propublica.org/congress/v1/house/votes/2022/12.jso
       "chamber": "House",
       "year": 2022,
       "month": 12,
-      "num_results": 26,
+      "num_results": 36,
       "votes": [
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 527,
+           "source": "http://clerk.house.gov/evs/2022/roll527.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll527.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/527.json",
+           "bill": {
+           "bill_id": "hres1519-117",
+           "number": "H.RES.1519",
+           "sponsor_id": "M000312",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hres1519.json",
+           "title": "Providing for consideration of the bill (H.R. 8393) to enable the people of Puerto Rico to choose a permanent, nonterritorial, fully self-governing political status for Puerto Rico and to provide for a transition to and the implementation of that permanent, nonterritorial, fully self-governing political status, and for other purposes.",
+           "latest_action": "Placed on the House Calendar, Calendar No. 166."
+           },
+           "question": "On Agreeing to the Resolution",
+           "question_text": "",
+           "description": "Providing for consideration of the bill (H.R. 8393) the Puerto Rico Status Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-15",
+           "time": "10:23:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 201,
+             "present": 0,
+             "not_voting": 12,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 217,
+             "no": 201,
+             "present": 0,
+             "not_voting": 13}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 526,
+           "source": "http://clerk.house.gov/evs/2022/roll526.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll526.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/526.json",
+           "bill": {
+           "bill_id": "s5230-117",
+           "number": "S.5230",
+           "sponsor_id": "M001169",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s5230.json",
+           "title": "A bill to increase accessibility to the National Missing and Unidentified Persons System, to facilitate data sharing between such system and the National Crime Information Center database of the Federal Bureau of Investigation, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Pass",
+           "question_text": "",
+           "description": "Billy’s Law",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-14",
+           "time": "20:41:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 205,
+             "no": 4,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 422,
+             "no": 4,
+             "present": 0,
+             "not_voting": 5}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 525,
+           "source": "http://clerk.house.gov/evs/2022/roll525.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll525.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/525.json",
+           "bill": {
+           "bill_id": "s4003-117",
+           "number": "S.4003",
+           "sponsor_id": "C001056",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s4003.json",
+           "title": "A bill to amend the Omnibus Crime Control and Safe Streets Act of 1968 to provide for training on alternatives to use of force, de-escalation, and mental and behavioral health and suicidal crises.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Passage",
+           "question_text": "",
+           "description": "Law Enforcement De-Escalation Training Act of 2022",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-14",
+           "time": "20:30:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 214,
+             "no": 3,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 50,
+             "no": 159,
+             "present": 0,
+             "not_voting": 4,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 264,
+             "no": 162,
+             "present": 0,
+             "not_voting": 5}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 524,
+           "source": "http://clerk.house.gov/evs/2022/roll524.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll524.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/524.json",
+           "bill": {
+           "bill_id": "s3905-117",
+           "number": "S.3905",
+           "sponsor_id": "P000595",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s3905.json",
+           "title": "A bill to prevent organizational conflicts of interest in Federal acquisition, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Passage",
+           "question_text": "",
+           "description": "Preventing Organizational Conflicts of Interest in Federal Acquisition Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-14",
+           "time": "20:19:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 216,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 3,
+             "no": 205,
+             "present": 0,
+             "not_voting": 5,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 219,
+             "no": 205,
+             "present": 0,
+             "not_voting": 7}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 523,
+           "source": "http://clerk.house.gov/evs/2022/roll523.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll523.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/523.json",
+           "bill": {
+           "bill_id": "hr1437-117",
+           "number": "H.R.1437",
+           "sponsor_id": "S001207",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr1437.json",
+           "title": "To amend the Weather Research and Forecasting Innovation Act of 2017 to direct the National Oceanic and Atmospheric Administration to provide comprehensive and regularly updated Federal precipitation information, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Concur in the Senate Amendment with an Amendment",
+           "question_text": "",
+           "description": "PRECIP Act",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-14",
+           "time": "20:07:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 215,
+             "no": 0,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 9,
+             "no": 201,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 224,
+             "no": 201,
+             "present": 0,
+             "not_voting": 6}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 522,
+           "source": "http://clerk.house.gov/evs/2022/roll522.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll522.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/522.json",
+           "bill": {
+           "bill_id": "motion-117",
+           "number": "MOTION",
+           "sponsor_id": null,
+           "api_uri": null,
+           "title": null,
+           "latest_action": null
+           },
+           "question": "On Motion to Suspend the Rules and Pass Certain Bills and Concur in a Senate Amendment",
+           "question_text": "",
+           "description": "",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-14",
+           "time": "14:25:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 217,
+             "no": 0,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 132,
+             "no": 80,
+             "present": 0,
+             "not_voting": 1,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 349,
+             "no": 80,
+             "present": 0,
+             "not_voting": 2}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 521,
+           "source": "http://clerk.house.gov/evs/2022/roll521.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll521.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/521.json",
+           "bill": {
+           "bill_id": "hres1518-117",
+           "number": "H.RES.1518",
+           "sponsor_id": "D000623",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hres1518.json",
+           "title": "Providing for consideration of the bill (H.R. 1948) to amend title 38, United States Code, to modify authorities relating to the collective bargaining of employees in the Veterans Health Administration; providing for consideration of the bill (S. 3905) to prevent organizational conflicts of interest in Federal acquisition, and for other purposes; providing for consideration of the bill (S. 4003) to amend the Omnibus Crime Control and Safe Streets Act of 1968 to provide for training on alternatives to use of force, de-escalation, and mental and behavioral health and suicidal crises; providing for the consideration of the Senate amendment to the bill (H.R. 1437) to amend the Weather Research and Forecasting Innovation Act of 2017 to direct the National Oceanic and Atmospheric Administration to provide comprehensive and regularly updated Federal precipitation information, and for other purposes; relating to consideration of the Senate amendments to the bill (H.R 2617) to amend section 1115 of title 31, United States Code, to amend the description of how performance goals are achieved, and for other purposes; and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Agreeing to the Resolution",
+           "question_text": "",
+           "description": "Providing for consideration of the bills H.R. 1948, S. 3905, and S. 4003; providing for consideration of the Senate amendment to the bill H.R. 1437; relating to consideration of the Senate amendments to the bill H.R. 2617; and for other purposes; and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-14",
+           "time": "14:04:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 216,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 206,
+             "present": 0,
+             "not_voting": 7,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 216,
+             "no": 206,
+             "present": 0,
+             "not_voting": 9}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 520,
+           "source": "http://clerk.house.gov/evs/2022/roll520.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll520.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/520.json",
+           "bill": {
+           "bill_id": "hres1518-117",
+           "number": "H.RES.1518",
+           "sponsor_id": "D000623",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hres1518.json",
+           "title": "Providing for consideration of the bill (H.R. 1948) to amend title 38, United States Code, to modify authorities relating to the collective bargaining of employees in the Veterans Health Administration; providing for consideration of the bill (S. 3905) to prevent organizational conflicts of interest in Federal acquisition, and for other purposes; providing for consideration of the bill (S. 4003) to amend the Omnibus Crime Control and Safe Streets Act of 1968 to provide for training on alternatives to use of force, de-escalation, and mental and behavioral health and suicidal crises; providing for the consideration of the Senate amendment to the bill (H.R. 1437) to amend the Weather Research and Forecasting Innovation Act of 2017 to direct the National Oceanic and Atmospheric Administration to provide comprehensive and regularly updated Federal precipitation information, and for other purposes; relating to consideration of the Senate amendments to the bill (H.R 2617) to amend section 1115 of title 31, United States Code, to amend the description of how performance goals are achieved, and for other purposes; and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Ordering the Previous Question",
+           "question_text": "",
+           "description": "Providing for consideration of the bills H.R. 1948, S. 3905, and S. 4003; providing for consideration of the Senate amendment to the bill H.R. 1437; relating to consideration of the Senate amendments to the bill H.R. 2617; and for other purposes; and for other purposes",
+           "vote_type": "YEA-AND-NAY",
+           "date": "2022-12-14",
+           "time": "13:47:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 212,
+             "no": 0,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 0,
+             "no": 210,
+             "present": 0,
+             "not_voting": 3,
+             "majority_position": "No"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 212,
+             "no": 210,
+             "present": 0,
+             "not_voting": 9}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 519,
+           "source": "http://clerk.house.gov/evs/2022/roll519.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll519.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/519.json",
+           "bill": {
+           "bill_id": "hr7535-117",
+           "number": "H.R.7535",
+           "sponsor_id": "K000389",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr7535.json",
+           "title": "To encourage the migration of Federal Government information technology systems to quantum-resistant cryptography, and for other purposes.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
+           },
+           "question": "On Motion to Suspend the Rules and Concur in the Senate Amendment",
+           "question_text": "",
+           "description": "Quantum Computing Cybersecurity Preparedness Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-13",
+           "time": "13:55:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 216,
+             "no": 0,
+             "present": 0,
+             "not_voting": 2,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 204,
+             "no": 3,
+             "present": 0,
+             "not_voting": 6,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 420,
+             "no": 3,
+             "present": 0,
+             "not_voting": 8}
+          },
+        {
+           "congress": 117,
+           "chamber": "House",
+           "session": 2,
+           "roll_call": 518,
+           "source": "http://clerk.house.gov/evs/2022/roll518.xml",
+           "url": "http://clerk.house.gov/evs/2022/roll518.xml",
+           "vote_uri": "https://api.propublica.org/congress/v1/117/house/sessions/2/votes/518.json",
+           "bill": {
+           "bill_id": "s1466-117",
+           "number": "S.1466",
+           "sponsor_id": "M001176",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/s1466.json",
+           "title": "A bill to authorize the Director of the United States Geological Survey to establish a regional program to assess, monitor, and benefit the hydrology of saline lakes in the Great Basin and the migratory birds and other wildlife dependent on those habitats, and for other purposes.",
+           "latest_action": "Message on House action received in Senate and at desk: House amendment to Senate bill."
+           },
+           "question": "On Motion to Suspend the Rules and Pass, as Amended",
+           "question_text": "",
+           "description": "Saline Lake Ecosystems in the Great Basin States Program Act",
+           "vote_type": "2/3 YEA-AND-NAY",
+           "date": "2022-12-12",
+           "time": "18:58:00",
+           "result": "Passed",
+           "democratic": {
+             "yes": 207,
+             "no": 0,
+             "present": 0,
+             "not_voting": 11,
+             "majority_position": "Yes"
+            },
+           "republican": {
+             "yes": 149,
+             "no": 56,
+             "present": 0,
+             "not_voting": 8,
+             "majority_position": "Yes"
+            },
+           "independent": {
+             "yes": 0,
+             "no": 0,
+             "present": 0,
+             "not_voting": 0
+            },
+           "total": {
+             "yes": 356,
+             "no": 56,
+             "present": 0,
+             "not_voting": 19}
+          },
         {
            "congress": 117,
            "chamber": "House",
@@ -84,10 +574,10 @@ content-location: https://api.propublica.org/congress/v1/house/votes/2022/12.jso
            "bill": {
            "bill_id": "hres1512-117",
            "number": "H.RES.1512",
-           "sponsor_id": null,
-           "api_uri": null,
-           "title": null,
-           "latest_action": null
+           "sponsor_id": "S000510",
+           "api_uri": "https://api.propublica.org/congress/v1/117/bills/hres1512.json",
+           "title": "Providing for the concurrence by the House in the Senate amendment to H.R. 7776, with an amendment.",
+           "latest_action": "Motion to reconsider laid on the table Agreed to without objection."
            },
            "question": "On Motion to Suspend the Rules and Agree",
            "question_text": "",
@@ -185,7 +675,7 @@ content-location: https://api.propublica.org/congress/v1/house/votes/2022/12.jso
            "sponsor_id": "N000002",
            "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr8404.json",
            "title": "To repeal the Defense of Marriage Act and ensure respect for State regulation of marriage, and for other purposes.",
-           "latest_action": "Presented to President."
+           "latest_action": "Became Public Law No: 117-228."
            },
            "question": "Table Motion to Reconsider",
            "question_text": "",
@@ -234,7 +724,7 @@ content-location: https://api.propublica.org/congress/v1/house/votes/2022/12.jso
            "sponsor_id": "N000002",
            "api_uri": "https://api.propublica.org/congress/v1/117/bills/hr8404.json",
            "title": "To repeal the Defense of Marriage Act and ensure respect for State regulation of marriage, and for other purposes.",
-           "latest_action": "Presented to President."
+           "latest_action": "Became Public Law No: 117-228."
            },
            "question": "On Motion to Concur in the Senate Amendment",
            "question_text": "",

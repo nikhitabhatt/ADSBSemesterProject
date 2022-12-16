@@ -1,5 +1,8 @@
 import requests
 import json
+from congress import Congress
+congress = Congress("UBUkraUmSFaWkkJ64CgAxwbc4PY44dXVEyVxRsey")
+
 
 #Getting user address
 userStreetAddress = input('What is your street address: ')
@@ -8,6 +11,23 @@ userCity = input('What is your city: ')
 userState = input('What is your state: ')
 
 addressString = (userStreetAddress + ', ' + userZipcode + ', ' + userCity + ', ' + userState)
+
+#gets recent house and senate bills
+def recentHouseBills():
+    introdHouse = congress.bills.recent(chamber='house', congress=111, type='introduced')
+    return introdHouse
+
+def recentSenateBills():
+    introdSenate = congress.bills.recent(chamber='senate', congress=111, type='introduced')
+    return introdSenate
+#gets recent house and senate votes
+def recentHouseVotes():
+    houseVotes = congress.votes.by_month(chamber='house')
+    return houseVotes
+
+def recentSenateVotes():
+    senateVotes = congress.votes.by_month(chamber='senate')
+    return senateVotes
 
 ##returns all the rep info
 def repName():
@@ -232,3 +252,28 @@ senator1Articles = json.loads(sen1articles)
 sen2articles = requests.get('https://api.goperigon.com/v1/all?apiKey=08db32cd-ff74-4992-959b-3b2a0899d564&q="' + senator2Name + '" &showReprints=false&from=2022-01-01&to=2022-01-31').text
 senator2Articles = json.loads(sen2articles)
 
+##New stuff
+introdHouse = congress.bills.recent(chamber='house', congress=111, type='introduced')
+print(introdHouse)
+
+introdSenate = congress.bills.recent(chamber='senate', congress=111, type='introduced')
+print(introdSenate)
+
+houseVotes = congress.votes.by_month(chamber='house')
+print(houseVotes)
+
+senateVotes = congress.votes.by_month(chamber='senate')
+print(senateVotes)
+
+##more new stuff
+output = json.load(open(r"C:\Users\nikhi\Downloads\BioguideReps.json"))
+
+
+bioguideRep = ''
+for person in output:
+    if (person['name']['last'] == repLastName) :
+        bioguideRep = person['id']['bioguide']
+print(bioguideRep)
+
+repBills = congress.members.bills(bioguideRep, type='introduced')
+print(repBills)
